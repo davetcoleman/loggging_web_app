@@ -15,9 +15,9 @@
     <body>
         <div class="container">
             <div class="hero-unit">
-                <h2>Bolt Graph Generation</h2>
+                <h2>Bolt Graph Generation 2</h2>
                 <p>The following is the log report:</p>
-		<pre><?php include 'log.txt'; ?></pre>		
+		<pre><?php echo htmlspecialchars(file_get_contents('log.txt')); ?></pre>
             </div>
         </div>
 
